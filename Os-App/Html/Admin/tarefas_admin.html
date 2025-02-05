@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../../img/Favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script type="module" src="../../Js/tarefas_admin.js"></script>
+    <script src="../../Js/tarefas_assist.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/site.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas - admin</title>
+</head>
+<body id="Bode">
+    <header class="NoPrint">
+        <nav class="navbar navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home_admin.html"><img class="Logo" src="../../img/Melo.png" alt=""></a>
+            </div>
+        </nav>
+    </header>
+    <h1 class="TextoH1 NoPrint">Lista de tarefas</h1>
+    <div class="text-center mb-3 NoPrint w-100 FiltroBlock">
+        <div>
+            <button id="Imprimir" class="BotaoPadrao2">Imprimir</button>
+            <button id="BaixarPDF" class="BotaoPadrao2">Baixar PDF da tabela</button></div>
+        <div class="PTarefa mt-2 W85">
+            <select class="form-control mb-2" id="SetorFiltro" name="SetorFiltro">
+                <option value="">Filtre por setor</option>
+            </select>
+            <select class="form-control mb-2" id="EquipamentoFiltro" name="EquipamentoFiltro">
+                <option value="">Filtre por equipamento</option>
+            </select>
+            <select class="form-control mb-2" id="ColaboradorFiltro" name="ColaboradorFiltro">
+                <option value="">Filtre por colaborador</option>
+            </select>
+            <select class="form-control mb-2" id="PrioridadeFiltro" name="PrioridadeFiltro">
+                <option value="">Filtre por prioridade</option>
+                <option value="A">A</option>
+                <option value="A+">A+</option>
+                <option value="A++">A++</option>
+            </select>
+            <select class="form-control mb-2" id="ClassificacaoFiltro" name="ClassificacaoFiltro">
+                <option value="">Filtre por classificação</option>
+                <option value="Corretiva">Corretiva</option>
+                <option value="Preventiva">Preventiva</option>
+                <option value="Melhoria">Melhoria</option>
+            </select>
+            <input type="text" name="OcorrenciaFiltro" class="form-control mb-2"
+                id="OcorrenciaFiltro" placeholder="Filtrar por ocorrência">
+            <input type="text" name="DataFiltro"  class="form-control mb-2"
+                id="DataFiltro" maxlength="10" placeholder="Filtrar por início (00/00/0000)">
+            <input type="text" name="TerminoFiltro" class="form-control mb-2"
+                id="TerminoFiltro" maxlength="10" placeholder="Filtrar por término (00/00/0000)">
+            <input type="text" name="DescricaoFiltro" class="form-control mb-2"
+                id="DescricaoFiltro" placeholder="Filtrar por descrição">
+            <input type="number" name="NumberFiltro" class="form-control mb-2"
+                id="NumberFiltro" placeholder="Filtre as tarefas seguintes ao número da tarefa digitado">
+            <p style="text-align: start;">O.S. em aberto: 
+                <input style="transform: scale(1.8);" type="checkbox" name="AbertoFiltro"
+                    id="AbertoFiltro">
+            </p>
+            <p style="text-align: start;">Visto da qualidade: 
+                <input style="transform: scale(1.8);" type="checkbox" name="VistoFiltro"
+                    id="VistoFiltro">
+            </p>
+            <br>
+            <button class="BotaoPadrao2" type="submit" id="FiltrarTarefa">Filtrar</button>
+            <button class="BotaoPadrao2" id="LimparFiltro">Limpar filtro</button>
+        </div>
+    </div>
+    <div class="w-100 text-center" id="PaginacaoDiv">
+
+    </div>
+    <div id="PaginacaoBotao" class="w-100 text-center">
+        
+        <button id="PrimeiraPagina" class="Paginacao"><<</button>
+        <button id="PaginaAnterior" class="Paginacao"><</button>
+        <button id="ProximaPagina" class="Paginacao">></button>
+        <button id="UltimaPagina" class="Paginacao">>></button>
+    </div>
+<div id="PDF" class="TabelaTarefa ">
+    <table id="tabela" class="Tabela">
+        <tr class="CabecalhoTabela">
+            <th class="Linha2 Verde">
+                Data de início
+            </th>
+            <th class="Linha2 Azul">
+                Cód. setor
+            </th>
+            <th class="Linha2 Verde">
+                Nome setor
+            </th>
+            <th class="Linha2 Azul">
+                Cód. equipamento
+            </th>
+            <th class="Linha2 Roxo">
+                Nome do equipamento
+            </th>
+            <th class="Linha2 Verde">
+                Nº da tarefa
+            </th>
+            <th class="Linha2 Verde">
+                Ocorrência
+            </th>
+            <th class="Linha2 Verde">
+                Descrição
+            </th>
+            <th class="Linha2 Verde">
+                Classificação
+            </th>
+            <th class="Linha2 Azul">
+                Prioridade
+            </th>
+            <th class="Linha2 Verde">
+                Tempo em minutos
+            </th>
+            <th class="Linha2 Roxo">
+                Data de finalização
+            </th>
+            <th class="Linha3 Azul">
+                Cód. colaborador
+            </th>
+            <th class="NoPrint Linha2 Azul"></th>
+        </tr>
+    </table>
+</div>
+</body>

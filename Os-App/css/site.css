@@ -1,0 +1,554 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  font-family: sans-serif;
+}
+.TextoErro2 {
+  color: white;
+}
+.TextoErro {
+  color: red;
+  border-radius: 4px;
+}
+.Nao {
+  display: none;
+}
+.W10 {
+  width: 10%;
+}
+.W20 {
+  width: 20%;
+}
+.Cinza {
+  background-color: rgba(128, 128, 128, 0.425);
+}
+.Linha {
+  padding: 6px;
+  border: 1px solid #007bff;
+}
+.Linha2 {
+  padding: 6px;
+  border-bottom: 3px solid black;
+  border-right: 1px solid black;
+}
+.Linha3 {
+  padding: 6px;
+  border-bottom: 3px solid black;
+}
+.Azul {
+  background-color: #258cfb9d;
+}
+.Azul2 {
+  background-color: rgba(0, 110, 255, 0.671);
+}
+.Verde {
+  background-color: rgba(157, 255, 11, 0.473);
+}
+.Verde2 {
+  background-color: rgba(0, 148, 0, 0.575);
+}
+.Roxo {
+  background-color: rgba(128, 0, 128, 0.726);
+}
+.Vermelho {
+  background-color: rgba(255, 0, 0, 0.616);
+}
+.Corretiva {
+  font-weight: 600;
+  color: red;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+.Preventiva {
+  font-weight: 600;
+  color: rgb(46, 46, 255);
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+.Melhoria {
+  font-weight: 600;
+  color: green;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+textarea {
+  resize: none; 
+  overflow: hidden; 
+  height: auto; 
+  min-height: 50px; 
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.TotalQualidade {
+  font-weight: 600;
+  color: #007bff;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 0.4rem;
+  margin-bottom: 5px;
+}
+.TotalQualidade2 {
+  font-weight: 600;
+  color: white;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 3px;
+  padding: 0.4rem;
+  margin-bottom: 5px;
+}
+.W85 {
+  width: 85% !important;
+}
+.FiltroBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Tabela {
+  border-radius: 10px;
+  font-size: 12px;
+}
+.TabelaTarefa {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto
+}
+.CabecalhoTabela {
+  width: 100%;
+}
+.ConteudoDiv {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: #258cfb;
+  color: white;
+  border-radius: 15px;
+  font-family: sans-serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.H1Conteudo {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.PopUpTotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    page-break-after: always;
+  page-break-inside: always;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+.PopUpTotal2 {
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    page-break-after: always;
+    page-break-inside: always;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+.PopUpTotal3 {
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+.PopUpDiv {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  box-shadow: 2px 3px 6px black;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border: 1px solid #258cfb;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.PopUpDiv2 {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 15px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 2px 3px 6px black;
+  page-break-after: always;
+  page-break-inside: always;
+  padding-bottom: 3px;
+  padding-top: 2px;
+  border: 1px solid #258cfb;
+  border-radius: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.PopUpDiv3 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  overflow: scroll;
+  overflow-x: hidden;
+  box-shadow: 2px 3px 6px black;
+  padding-bottom: 3px;
+  padding-top: 2px;
+  border: 1px solid #258cfb;
+  border-radius: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.PopUpDivPDF {
+  width: 100%;
+  border: none;
+}
+.PopUpTotalPDF {
+  width: 50% !important;
+  background-color: white !important;
+  page-break-inside: always;
+  page-break-before: avoid;
+  page-break-after: always;
+}
+.TextoDaQualidade {
+  display: block;
+  page-break-inside: always;
+  page-break-after: always;
+}
+.Total {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.Total2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+.TotalBetween {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.menosMargin {
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+.BotaoPadrao {
+  text-decoration: none;
+  padding: 19px;
+  font-size: 18px;
+  border: 1px solid rgb(0, 0, 75);
+  background-color: #258cfb;
+  border-radius: 15px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: 100ms;
+}
+.BotaoPadrao:hover {
+  transition: 100ms;
+  background-color: #66aefa;
+  color: white;
+}
+.BotaoPadrao3 {
+  width: 80%;
+  text-decoration: none;
+  padding: 19px;
+  font-size: 18px;
+  border: 1px solid rgb(0, 0, 75);
+  background-color: #258cfb;
+  border-radius: 15px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: 100ms;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px black;
+}
+@media print {
+  .BotaoPadrao2 {
+    display: none;
+  }
+  .BotaoPadrao22 {
+    display: none;
+  }
+  #PaginacaoDiv {
+    display: none;
+  }
+  #PaginacaoBotao {
+    display: none;
+  }
+}
+.BotaoPadrao3:hover {
+  transition: 100ms;
+  background-color: #66aefa;
+  color: white;
+}
+.BotaoPadrao2 {
+  text-decoration: none;
+  padding: 13px;
+  font-size: 14px;
+  border: 1px solid rgb(0, 0, 75);
+  background-color: #007bff;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: 100ms;
+}
+.BotaoPadrao2:hover {
+  transition: 100ms;
+  background-color: #66aefa;
+  color: white;
+}
+.BotaoPadrao22 {
+  margin-top: -5px;
+  text-decoration: none;
+  padding: 7px;
+  font-size: 14px;
+  border: 1px solid rgb(0, 0, 75);
+  background-color: #007bff;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: 100ms;
+}
+.BotaoPadrao22:hover {
+  transition: 100ms;
+  background-color: #66aefa;
+  color: white;
+}
+.BotaoPadrao4 {
+  text-decoration: none;
+  width: 80%;
+  padding: 13px;
+  font-size: 14px;
+  border: 1px solid rgb(0, 0, 75);
+  background-color: white;
+  border-radius: 7px;
+  color: #007bff;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: 100ms;
+  margin-bottom: 5px;
+}
+.transparenciaFalse {
+  background-color: #258cfb;
+}
+.BotaoPadrao4:hover {
+  transition: 100ms;
+  background-color: #66aefa;
+  color: white;
+}
+.BotaoPadrao5 {
+  text-decoration: none;
+  width: 80%;
+  padding: 6px;
+  font-size: 12px;
+  border: 1px solid rgb(0, 0, 75);
+  background-color: white;
+  border-radius: 7px;
+  color: #007bff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: 100ms;
+  margin-bottom: 5px;
+}
+.BotaoPadrao5:hover {
+  transition: 100ms;
+  background-color: #66aefa;
+  color: white;
+}
+.BotaoPadrao6 {
+  text-decoration: none;
+  width: 80%;
+  padding: 3px;
+  cursor: pointer;
+  font-size: 10px;
+  border: 1px solid rgb(0, 0, 75);
+  background-color: white;
+  border-radius: 5px;
+  color: #007bff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: 100ms;
+  margin-bottom: 5px;
+}
+.BotaoPadrao6:hover {
+  transition: 100ms;
+  background-color: #66aefa;
+  color: white;
+}
+.Paginacao {
+  text-decoration: none;
+  padding: 3px;
+  cursor: pointer;
+  font-size: 20px;
+  border: 2px solid rgb(0, 0, 75);
+  background-color: white;
+  border-radius: 5px;
+  color: #007bff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: 100ms;
+  margin-bottom: 5px;
+}
+.Paginacao:hover {
+  transition: 100ms;
+  background-color: #66aefa;
+  color: white;
+}
+.MainForm {
+  background-color: #258cfb;
+  border-radius: 10px;
+}
+.TextoH1 {
+  background-color: #258cfba6;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px #007bff solid;
+}
+.TextoH12 {
+  background-color: #258cfba6;
+  border-radius: 10px;
+  padding: 3px;
+  border: 1px #007bff solid;
+}
+.logo {
+  height: 100%;
+}
+.Tarefa {
+  width: 100%;
+}
+.None {
+  display: none;
+}
+.MarginBaixo{
+  margin-bottom: 15px;
+}
+.PTarefa {
+  background-color: #258cfb;
+  border-radius: 15px;
+  border: 1px soid black;
+  padding: 20px;
+  color: white;
+  font-family: sans-serif;
+  width: 100%;
+}
+.PTarefa2 {
+  background-color: #258cfb;
+  border-radius: 15px;
+  border: 1px soid black;
+  padding: 10px;
+  margin: 2px;
+  color: white;
+  font-family: sans-serif;
+  width: 100%;
+}
+.DivTarefa {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 480px){
+  .BotaoPadrao {
+    padding: 16px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 380px){
+  .TextoH1 {
+    border-radius: 6px;
+    padding: 2px;
+  }
+  .BotaoPadrao {
+    padding: 14px;
+    font-size: 13px;
+  }
+}
+.Print {
+  display: none;
+}
+@media print {
+  .Print {
+    display: block;
+  }
+  .NoPrint {
+    display: none;
+  }
+  .container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
